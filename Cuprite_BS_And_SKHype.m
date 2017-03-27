@@ -72,6 +72,8 @@ fprintf('GKKM & %.4f $\\pm$ %.4f & %d & %d & %.4f\\\\ \n', rmse, stdd, kkmTime, 
 % BS 
 ms=[5 10 20 30];
 
+% ms=[30];
+
 % find Gaussian kernel bandwidth!
 K_s1 = computeKernelMatrix(M,1);
 c=0;

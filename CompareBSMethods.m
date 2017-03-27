@@ -1,6 +1,6 @@
 
 
-clc;
+% clc;
 clear all;
 close all;
 
@@ -9,9 +9,9 @@ close all;
 verbosity = 0; 
 R = 8;
 % numOfPixels = 2000;
-numOfPixels = 100;
+numOfPixels = 1000;
 % nruns = 100;
-nruns = 1;
+nruns = 10;
 SNR = 21;
 
 
@@ -61,7 +61,8 @@ for i=1:L-1
 end
 
 
-nBands = [5 10 20 30];
+% nBands = [5 10 20 30];
+ nBands = [20];
 
 for m=nBands,
 % for m=20,
@@ -71,6 +72,7 @@ for m=nBands,
     Opt_opt = optimset('Algorithm','interior-point');
     % m=10;   % number of desired bands
     mu_0 = 1/(m-1);
+    %[kbw,fval] = fmincon(@(kbw)(abs(mean(c.^(1/(kbw^2)))-mu_0)),0.4/m,[],[],[],[],1e-10,1e100,[],Opt_opt);
     [kbw,fval] = fmincon(@(kbw)(abs(mean(c.^(1/(kbw^2)))-mu_0)),1,[],[],[],[],1e-10,1e100,[],Opt_opt);
 
 

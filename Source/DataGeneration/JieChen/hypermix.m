@@ -30,6 +30,7 @@ elseif par == 2         % normal bilinear mixing
     for i = 1 : N
         for j = 1 : R-1
             for k = j+1 : R
+                %r(:, i) = r(:, i) + a(j,i)*a(k,i)* M(:,j).*M(:,k);
                 r(:, i) = r(:, i) + a(j,i)*a(k,i)* M(:,j).*M(:,k);
             end
         end
@@ -38,6 +39,7 @@ elseif par == 2         % normal bilinear mixing
 elseif par == 3        % intimate mixture
     r1 = hypermix(M, N, 1, a);
     r = r1.^(0.7);
+    %r = r1.^(3);
 end
 
 end
