@@ -20,7 +20,7 @@ Date: March 2016.
 
 Ref.:
 
-[1]  T. Imbiriba, J.C.M. Bermudez, C. Richard, "Band selection for nonlinear unmixing of hyperspectral images as maximal click problem", submitted to the IEEE Transaction on Image Processing Magazine.
+[1]  T. Imbiriba, J.C.M. Bermudez, C. Richard, "Band selection for nonlinear unmixing of hyperspectral images as maximal click problem", submitted to the IEEE Transaction on Image Processing Magazine. (http://ieeexplore.ieee.org/document/7867872/)
 
 [2] T. Imbiriba, J.C.M. Bermudez, C. Richard, "Technical Report: Band selection for nonlinear unmixing of hyperspectral images as a maximal clique problem", [Online] Available: https://arxiv.org/abs/1603.00437
 
